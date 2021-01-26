@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+. ~/.quickdrop/lib/functions.sh
+
+echo "[Starting at $(date)]" >> $watchlog
+launchctl load -w ~/Library/LaunchAgents/com.github.cwilper.quickdrop.plist >> $watchlog 2>&1

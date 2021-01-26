@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+. ~/.quickdrop/lib/functions.sh
+
+qdwatch "$@" >> $watchlog 2>&1

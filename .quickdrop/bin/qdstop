@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+. ~/.quickdrop/lib/functions.sh
+
+echo "[Stopping at $(date)]" >> $watchlog
+launchctl unload -w ~/Library/LaunchAgents/com.github.cwilper.quickdrop.plist >> /dev/null 2>&1

@@ -1,0 +1,5 @@
+# The AWS profile to use (must be defined in ~/.aws/credentials)
+QD_PROFILE=quickdrop
+
+# The S3 bucket to save to (must be writable by the above profile, and must allow public READ acls)
+QD_BUCKET=
