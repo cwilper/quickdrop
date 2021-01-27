@@ -88,7 +88,7 @@ qdone() {
   result=$(qdup "$1" 2>&1)
   if [[ $? == 0 ]]; then
     if [[ $3 == true ]]; then
-      echo -n $result | pbcopy
+      echo -n $result | LANG=en_US.UTF-8 pbcopy
       if [[ $2 == gui ]]; then
         notify "Upload complete" "URL copied to clipboard" "Morse"
       fi
