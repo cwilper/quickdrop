@@ -13,11 +13,11 @@ How it works:
 Download and run `release/install.sh` manually, or use the follow curl or wget command:
 
 ```
-curl -o- https://raw.githubusercontent.com/cwilper/quickdrop/1.0.0/release/install.sh | bash
+curl -o- https://raw.githubusercontent.com/cwilper/quickdrop/1.0.1/release/install.sh | bash
 ```
 
 ```
-wget -qO- https://raw.githubusercontent.com/cwilper/quickdrop/1.0.0/release/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/cwilper/quickdrop/1.0.1/release/install.sh | bash
 ```
 
 This will install the software in `~/.quickdrop`, prompt you to install the dependencies,
