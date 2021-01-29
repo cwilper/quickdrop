@@ -66,7 +66,7 @@ qdup() {
     result=$(aws --profile $QD_PROFILE s3 cp "$path" $s3_dest_path --acl public-read --content-type "$content_type" --content-disposition "$content_disposition" 2>&1)
   fi
   if [[ $? == 0 ]]; then
-    local urlsafe_filename=$(echo "$result" | sed 's|.*s3://.*/||g')
+    local urlsafe_filename=$(echo "$result" | sed 's|.*s3://.*/||g' | sed 's| |+|g')
     echo "https://$QD_BUCKET.s3.amazonaws.com/$randid/$urlsafe_filename"
   else
     result=${result/// }
